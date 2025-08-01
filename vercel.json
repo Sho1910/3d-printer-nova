@@ -1,10 +1,8 @@
 {
-  "functions": {
-    "api/print.py": {
-      "runtime": "@vercel/python"
-    },
-    "api/actions.py": {
-      "runtime": "@vercel/python"
+  "builds": [
+    {
+      "src": "api/*.py",
+      "use": "@vercel/python"
     }
-  }
+  ]
 }
